@@ -31,13 +31,22 @@ This project serves as the backend for the faddomm-front. It connects to AWS usi
      myenv\Scripts\activate
      ```
 
-3. **Install project dependencies** 
+3. **Create a .env file**
+  Create a .env file in the project root directory and add the following secret variables:
+
+    ```bash
+    AWS_ACCESS_ID=<your_aws_access_id>
+    AWS_SECRET_KEY=<your_aws_secret_key>
+    AWS_REGION=<your_aws_region>
+   ```
+
+4. **Install project dependencies** 
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the project**
+5. **Run the project**
 
    ```bash
    fastapi dev main.py
